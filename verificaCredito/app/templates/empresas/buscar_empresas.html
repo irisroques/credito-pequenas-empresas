@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta Score</title>
+    <link rel="stylesheet" href="{%static 'app/css/bootstrap.min.css'%}">
+
+</head>
+<body>
+
+<nav class="navbar navbar-light" style="background-color: #00a000;">
+  <span class="navbar-brand mb-0 h1">Consulta de Score de PyMES</span>
+</nav>
+<main class="container">
+       <form>
+          <div class="form-group">
+            <label for="inputCNPJ">Introducza el CNPJ de la Empresa</label>
+            <input type="number" class="form-control" id="inputCNPJ" aria-describedby="cnpj">
+            <small id="cnpjHelp" class="form-text text-muted"> Formato XX.XXX.XXX/XXXX-XX.</small>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+</main>
+<nav class="navbar fixed-bottom navbar-light bg-light">
+  <a class="navbar-brand" href="https://github.com/irisroques">clic para conocer al desarollador</a>
+</nav>
+
+</body>
+</html>
